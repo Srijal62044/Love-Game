@@ -287,6 +287,8 @@ function initApp() {
   initNav();
   initMemoryDeck();
   renderSection('home');
+  document.getElementById('section-home')
+  .classList.add('active-section');
 
   // Hide loading screen after 1500ms
   setTimeout(() => {
