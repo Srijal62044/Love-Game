@@ -221,16 +221,18 @@ img { display: block; max-width: 100%; }
 
 /* ── Sections ── */
 .section {
-  position: absolute;
-  inset: 0;
-  overflow-y: auto;
-  overscroll-behavior: contain;
+  width: 100%;
+  min-height: 100%;
+  display: none;
+
   opacity: 0;
   transform: translateX(60px);
   pointer-events: none;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
 .section.active-section {
+  display: block;
   opacity: 1;
   transform: translateX(0);
   pointer-events: auto;
